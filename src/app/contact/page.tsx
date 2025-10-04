@@ -337,7 +337,7 @@ export default function Contact() {
                 </div>
 
                 <div className="bg-white p-6 rounded-lg shadow-md">
-                  <h3 className="text-lg font-semibent text-gray-900 mb-2">
+                  <h3 className="text-lg font-semibold text-gray-900 mb-2">
                     Can parents attend the event?
                   </h3>
                   <p className="text-gray-600">
@@ -392,7 +392,7 @@ export default function Contact() {
       </section>
 
       {/* Social Media */}
-      <section className="py-16 bg-gray-50">
+      {/*<section className="py-16 bg-gray-50">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <h2 className="text-3xl font-bold text-gray-900 mb-6">
             Follow Us on Social Media
@@ -436,7 +436,7 @@ export default function Contact() {
             </a>
           </div>
         </div>
-      </section>
+      </section>*/}
     </div>
   );
 }
