@@ -250,28 +250,28 @@ export default function Home() {
             <div className="bg-white p-6 rounded-lg shadow-md">
               <div className="flex items-center mb-4">
                 <div className="w-12 h-12 bg-blue-500 rounded-full flex items-center justify-center mr-3">
-                  <span className="text-white font-semibold">SJ</span>
+                  <span className="text-white font-semibold">CO</span>
                 </div>
                 <div>
-                  <h4 className="font-semibold">Sarah Johnson</h4>
-                  <p className="text-gray-600 text-sm">High School Student</p>
+                  <h4 className="font-semibold">Lucca D.</h4>
+                  <p className="text-gray-600 text-sm">College Student</p>
                 </div>
               </div>
               <p className="text-gray-700 italic">
                 "The Delco Science Fair gave me the confidence to pursue my
-                passion for chemistry. The feedback from judges helped me
-                improve my research skills tremendously!"
+                passion for physics. The feedback from judges helped me improve
+                my research skills tremendously!"
               </p>
             </div>
 
             <div className="bg-white p-6 rounded-lg shadow-md">
               <div className="flex items-center mb-4">
                 <div className="w-12 h-12 bg-green-500 rounded-full flex items-center justify-center mr-3">
-                  <span className="text-white font-semibold">MT</span>
+                  <span className="text-white font-semibold">MR</span>
                 </div>
                 <div>
-                  <h4 className="font-semibold">Ms. Thompson</h4>
-                  <p className="text-gray-600 text-sm">Science Teacher</p>
+                  <h4 className="font-semibold">Mike R.</h4>
+                  <p className="text-gray-600 text-sm">College Faculty</p>
                 </div>
               </div>
               <p className="text-gray-700 italic">
@@ -284,10 +284,10 @@ export default function Home() {
             <div className="bg-white p-6 rounded-lg shadow-md">
               <div className="flex items-center mb-4">
                 <div className="w-12 h-12 bg-purple-500 rounded-full flex items-center justify-center mr-3">
-                  <span className="text-white font-semibold">DR</span>
+                  <span className="text-white font-semibold">JS</span>
                 </div>
                 <div>
-                  <h4 className="font-semibold">David Rodriguez</h4>
+                  <h4 className="font-semibold">Joe S.</h4>
                   <p className="text-gray-600 text-sm">Parent</p>
                 </div>
               </div>
