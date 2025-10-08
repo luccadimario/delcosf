@@ -160,11 +160,7 @@ export default function Contact() {
               </div>
               <h3 className="text-xl font-semibold mb-2">Email Us</h3>
               <p className="text-gray-600">
-                Roger Mecouch: rmecouch@gmail.com
-                <br />
-                Suzanne Mecouch: suemecouch@gmail.com
-                <br />
-                Robert Fleck: r.f.2012@comcast.net
+                Fill out the form to send an email to our coordinators!
               </p>
             </div>
           </div>

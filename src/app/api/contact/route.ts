@@ -27,10 +27,12 @@ export async function POST(req: NextRequest) {
     }
 
     // Determine which coordinator to send to based on inquiry type
-    //const recipientEmail = 'rmecouch@gmail.com' // Default to Roger
-    //const ccEmails = ['suemecouch@gmail.com', 'r.f.2012@comcast.net']
     const recipientEmail = "suemecouch@gmail.com"; // Default to Sue
-    const ccEmails = ["luccadimario@gmail.com"];
+    const ccEmails = [
+      "luccadimario@gmail.com",
+      "rmecouch@gmail.com",
+      "r.f.2012@comcast.net",
+    ];
 
     // Format email content with better HTML formatting
     const emailHtml = `
