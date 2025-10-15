@@ -26,6 +26,9 @@ export default function Contact() {
     "idle" | "success" | "error"
   >("idle");
   const [dropdownOpen, setDropdownOpen] = useState(false);
+  const [errorMessage, setErrorMessage] = useState<string>("");
+  const [fallbackContacts, setFallbackContacts] = useState<any[]>([]);
+  const [showErrorModal, setShowErrorModal] = useState(false);
 
   const inquiryOptions = [
     { value: "general", label: "General Information" },
@@ -87,7 +90,13 @@ export default function Contact() {
         alert("Thank you for your message! We will get back to you soon.");
       } else {
         setSubmitStatus("error");
-        alert(data.error || "Failed to send message. Please try again.");
+        if (data.fallbackContacts) {
+          setErrorMessage(data.error);
+          setFallbackContacts(data.fallbackContacts);
+          setShowErrorModal(true);
+        } else {
+          alert(data.error || "Failed to send message. Please try again.");
+        }
       }
     } catch (error) {
       console.error("Form submission error:", error);
@@ -259,7 +268,7 @@ export default function Contact() {
                     <button
                       type="button"
                       onClick={() => setDropdownOpen(!dropdownOpen)}
-                      className="w-full px-4 py-3 text-left border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent flex items-center justify-between hover:border-gray-400 transition-colors"
+                      className="w-full cursor-pointer px-4 py-3 text-left border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent flex items-center justify-between hover:border-gray-400 transition-colors"
                     >
                       <span className="text-gray-900">
                         {selectedOption?.label || "Select an option"}
@@ -356,7 +365,7 @@ export default function Contact() {
                 <button
                   type="submit"
                   disabled={isSubmitting}
-                  className={`w-full px-8 py-3 rounded-lg font-semibold transition-colors ${
+                  className={`w-full px-8 py-3 cursor-pointer rounded-lg font-semibold transition-colors ${
                     isSubmitting
                       ? "bg-gray-400 text-white cursor-not-allowed"
                       : "bg-blue-600 text-white hover:bg-blue-700"
@@ -440,45 +449,27 @@ export default function Contact() {
             <div className="text-center mb-8">
               <h2 className="text-3xl font-bold mb-4">Fair Coordinators</h2>
               <p className="text-blue-100">
-                For additional information, please contact our staff:
+                Your information and message will be sent to our staff:
               </p>
             </div>
             <div className="grid md:grid-cols-3 gap-6 mx-auto">
               <div className="bg-white bg-opacity-10 rounded-lg p-6 text-center">
-                <h3 className="text-xl font-semibold text-gray-900">
+                <h3 className="text-xl font-semibold mb-1 text-gray-900">
                   Roger Mecouch
                 </h3>
-                <h4 className="text-sm mb-2 text-gray-500">Co-Director</h4>
-                <a
-                  href="mailto:suemecouch@delcosciencefair.org"
-                  className="text-blue-500 hover:text-blue-300 underline"
-                >
-                  rmecouch@delcosciencefair.org
-                </a>
+                <h4 className="text-sm mb-1 text-gray-500">Co-Director</h4>
               </div>
               <div className="bg-white bg-opacity-10 rounded-lg p-6 text-center">
-                <h3 className="text-xl font-semibold text-gray-900">
+                <h3 className="text-xl font-semibold mb-1 text-gray-900">
                   Bob Fleck
                 </h3>
-                <h4 className="text-sm mb-2 text-gray-500">Co-Director</h4>
-                <a
-                  href="mailto:suemecouch@delcosciencefair.org"
-                  className="text-blue-500 hover:text-blue-300 underline"
-                >
-                  r.f.2012@comcast.net
-                </a>
+                <h4 className="text-sm mb-1 text-gray-500">Co-Director</h4>
               </div>
               <div className="bg-white bg-opacity-10 rounded-lg p-6 text-center">
-                <h3 className="text-xl font-semibold text-gray-900">
+                <h3 className="text-xl mb-1 font-semibold text-gray-900">
                   Suzanne Mecouch
                 </h3>
-                <h4 className="text-sm mb-2 text-gray-500">Fair Coordinator</h4>
-                <a
-                  href="mailto:suemecouch@delcosciencefair.org"
-                  className="text-blue-500 hover:text-blue-300 underline"
-                >
-                  suemecouch@delcosciencefair.org
-                </a>
+                <h4 className="text-sm mb-1 text-gray-500">Fair Coordinator</h4>
               </div>
             </div>
           </div>
@@ -531,6 +522,63 @@ export default function Contact() {
           </div>
         </div>
       </section>*/}
+
+      {/* Error Modal */}
+      {showErrorModal && (
+        <div className="fixed inset-0 bg-white bg-opacity-80 backdrop-blur-sm flex items-center justify-center z-50 px-4">
+          <div className="bg-white rounded-lg max-w-md w-full p-6 shadow-xl border border-gray-200">
+            <div className="flex items-center mb-4">
+              <div className="w-10 h-10 bg-red-100 rounded-full flex items-center justify-center mr-3">
+                <svg
+                  className="w-6 h-6 text-red-600"
+                  fill="none"
+                  stroke="currentColor"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    strokeWidth={2}
+                    d="M12 8v4m0 4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"
+                  />
+                </svg>
+              </div>
+              <h3 className="text-lg font-semibold text-gray-900">
+                Email Service Issue
+              </h3>
+            </div>
+
+            <p className="text-gray-600 mb-6">{errorMessage}</p>
+
+            <div className="space-y-3 mb-6">
+              {fallbackContacts.map((contact: any, index: number) => (
+                <div
+                  key={index}
+                  className="bg-gray-50 rounded-lg p-3 flex items-center justify-between"
+                >
+                  <div>
+                    <p className="font-medium text-gray-900">{contact.name}</p>
+                    <p className="text-sm text-gray-600">{contact.email}</p>
+                  </div>
+                  <a
+                    href={`mailto:${contact.email}`}
+                    className="bg-blue-600 text-white px-3 py-1 rounded text-sm hover:bg-blue-700 transition-colors"
+                  >
+                    Email
+                  </a>
+                </div>
+              ))}
+            </div>
+
+            <button
+              onClick={() => setShowErrorModal(false)}
+              className="w-full bg-gray-600 text-white py-2 px-4 rounded hover:bg-gray-700 transition-colors cursor-pointer"
+            >
+              Close
+            </button>
+          </div>
+        </div>
+      )}
     </div>
   );
 }

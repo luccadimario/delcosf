@@ -156,9 +156,8 @@ export default function Home() {
               </div>
               <h3 className="text-xl font-semibold mb-2">Who</h3>
               <p className="text-gray-600">
-                Students 6-12
-                <br />
-                With a Passion for Science!
+                Students 6-12 attending a Delaware County, PA school, public or
+                private
               </p>
             </div>
           </div>
@@ -194,7 +193,7 @@ export default function Home() {
             <div className="bg-gradient-to-br from-blue-50 to-purple-50 p-8 rounded-lg">
               <div className="space-y-6">
                 <div className="flex items-center">
-                  <div className="w-14 h-14 bg-blue-600 rounded-full flex items-center justify-center mr-4">
+                  <div className="w-15 h-15 bg-blue-600 rounded-full flex items-center justify-center mr-4">
                     <span className="text-white font-bold text-xl">200+</span>
                   </div>
                   <div>
@@ -205,7 +204,7 @@ export default function Home() {
                   </div>
                 </div>
                 <div className="flex items-center">
-                  <div className="w-14 h-14 bg-green-600 rounded-full flex items-center justify-center mr-4">
+                  <div className="w-15 h-15 bg-green-600 rounded-full flex items-center justify-center mr-4">
                     <span className="text-white font-bold text-xl">67</span>
                   </div>
                   <div>
@@ -216,7 +215,7 @@ export default function Home() {
                   </div>
                 </div>
                 <div className="flex items-center">
-                  <div className="w-14 h-14 bg-purple-600 rounded-full flex items-center justify-center mr-4">
+                  <div className="w-15 h-15 bg-purple-600 rounded-full flex items-center justify-center mr-4">
                     <span className="text-white font-bold text-xl">30+</span>
                   </div>
                   <div>

@@ -71,11 +71,18 @@ export async function POST(req: NextRequest) {
       subject: `[Delco Science Fair] ${subject}`,
       html: emailHtml,
     });
-
     if (error) {
       console.error("Resend error:", error);
       return NextResponse.json(
-        { error: "Failed to send email. Please try again later." },
+        {
+          error:
+            "Unable to send email through our system. Please contact the fair coordinators directly:",
+          fallbackContacts: [
+            { name: "Sue Mecouch", email: "suemecouch@delcosciencefair.org" },
+            { name: "Roger Mecouch", email: "rmecouch@delcosciencefair.org" },
+            { name: "Bob Fleck", email: "rfleck@delcosciencefair.org" },
+          ],
+        },
         { status: 500 },
       );
     }

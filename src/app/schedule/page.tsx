@@ -317,8 +317,7 @@ export default function Schedule() {
                   <h4 className="font-semibold text-gray-900 mb-2">Parking</h4>
                   <p className="text-gray-600 mb-4">
                     Free parking is available in the main lot and overflow
-                    areas. Additional parking will be available at the nearby
-                    school with shuttle service.
+                    areas.
                   </p>
                 </div>
 
@@ -329,17 +328,6 @@ export default function Schedule() {
                   <p className="text-gray-600 mb-4">
                     The venue is fully wheelchair accessible with elevators,
                     accessible restrooms, and designated parking spaces.
-                  </p>
-                </div>
-
-                <div>
-                  <h4 className="font-semibold text-gray-900 mb-2">
-                    Food & Beverages
-                  </h4>
-                  <p className="text-gray-600">
-                    Lunch will be provided for all participants and judges.
-                    Light refreshments will be available throughout the day.
-                    Outside food is welcome.
                   </p>
                 </div>
               </div>
@@ -427,7 +415,7 @@ export default function Schedule() {
                 </ul>
 
                 <h3 className="text-lg font-semibold text-gray-900 mb-4">
-                  For Visitors:
+                  For Visitors (only permitted during setup):
                 </h3>
                 <ul className="space-y-2 text-gray-600">
                   <li className="flex items-start">
@@ -442,7 +430,7 @@ export default function Schedule() {
                         clipRule="evenodd"
                       />
                     </svg>
-                    Camera for photos (flash permitted)
+                    Camera for photos
                   </li>
                   <li className="flex items-start">
                     <svg
@@ -470,7 +458,7 @@ export default function Schedule() {
                         clipRule="evenodd"
                       />
                     </svg>
-                    Questions for the young scientists!
+                    Questions for the scientists!
                   </li>
                 </ul>
               </div>
