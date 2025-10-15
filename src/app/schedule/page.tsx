@@ -29,7 +29,7 @@ export default function Schedule() {
       date: "November 14, 2025",
       title: "SRC/IRB Approval Deadline",
       description:
-        "Scientific Review Committee and Institutional Review Board approvals must be obtained before experimentation begins. Check if your project needs approval using the Rules Wizard at https://ruleswizard.societyforscience.org/. Send required forms to rmecouch@gmail.com.",
+        "Scientific Review Committee and Institutional Review Board approvals must be obtained before experimentation begins. Check if your project needs approval using the Rules Wizard at https://ruleswizard.societyforscience.org/. Send required forms to rmecouch@delcosciencefair.org.",
     },
     {
       date: "January 22, 2026",
@@ -98,7 +98,7 @@ export default function Schedule() {
               Event Schedule
             </h1>
             <p className="text-xl md:text-2xl max-w-3xl mx-auto mb-8">
-              Plan your day at the 2025 Delco Science Fair
+              Plan your day at the 2026 Delco Science Fair
             </p>
             <div className="bg-white bg-opacity-10 rounded-lg p-6 inline-block">
               <div className="text-blue-600 text-center">
@@ -159,7 +159,7 @@ export default function Schedule() {
                             Check Rules Wizard →
                           </a>
                           <a
-                            href="mailto:rmecouch@gmail.com"
+                            href="mailto:rmecouch@delcosciencefair.org"
                             className="inline-block bg-gray-600 text-white px-3 py-1 rounded text-sm hover:bg-gray-700"
                           >
                             Email Forms →

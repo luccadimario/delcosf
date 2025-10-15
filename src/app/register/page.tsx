@@ -48,10 +48,10 @@ export default function Register() {
               If approval is needed, send forms 1, 1a, 1b and any additional
               required forms to:{" "}
               <a
-                href="mailto:rmecouch@gmail.com"
+                href="mailto:rmecouch@delcosciencefair.org"
                 className="text-blue-600 underline"
               >
-                rmecouch@gmail.com
+                rmecouch@delcosciencefair.org
               </a>
             </p>
           </div>

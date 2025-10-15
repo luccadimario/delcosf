@@ -11,7 +11,7 @@ export default function About() {
               About the Delco Science Fair
             </h1>
             <p className="text-xl md:text-2xl max-w-3xl mx-auto">
-              Celebrating 25 years of scientific discovery and innovation in
+              Celebrating 67 years of scientific discovery and innovation in
               Delaware County
             </p>
           </div>
@@ -175,7 +175,7 @@ export default function About() {
                 <div className="text-center">
                   <div className="w-16 h-16 bg-blue-100 rounded-full flex items-center justify-center mx-auto mb-4">
                     <span className="text-2xl font-bold text-blue-600">
-                      2000
+                      1959
                     </span>
                   </div>
                   <h3 className="text-xl font-semibold mb-3">The Beginning</h3>
@@ -191,14 +191,14 @@ export default function About() {
                 <div className="text-center">
                   <div className="w-16 h-16 bg-green-100 rounded-full flex items-center justify-center mx-auto mb-4">
                     <span className="text-2xl font-bold text-green-600">
-                      2010
+                      2000
                     </span>
                   </div>
                   <h3 className="text-xl font-semibold mb-3">Growing Impact</h3>
                   <p className="text-gray-600">
                     Expanded to include all Delaware County schools with over
-                    300 participants. Introduced special awards for
-                    environmental science and technology innovation.
+                    200 participants. Introduced special awards for scientific
+                    innovation.
                   </p>
                 </div>
               </div>
@@ -207,12 +207,12 @@ export default function About() {
                 <div className="text-center">
                   <div className="w-16 h-16 bg-purple-100 rounded-full flex items-center justify-center mx-auto mb-4">
                     <span className="text-2xl font-bold text-purple-600">
-                      2025
+                      2026
                     </span>
                   </div>
                   <h3 className="text-xl font-semibold mb-3">Today</h3>
                   <p className="text-gray-600">
-                    Now featuring 500+ students annually, with partnerships from
+                    Now featuring 250+ students annually, with partnerships from
                     major universities and technology companies, inspiring the
                     next generation of innovators.
                   </p>
@@ -235,7 +235,129 @@ export default function About() {
             </p>
           </div>
 
-          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+            <div className="bg-white p-6 rounded-lg shadow-md border-l-4 border-purple-500">
+              <div className="flex items-center mb-4">
+                <div className="w-12 h-12 bg-purple-100 rounded-lg flex items-center justify-center mr-3">
+                  <svg
+                    className="w-6 h-6 text-purple-600"
+                    fill="none"
+                    stroke="currentColor"
+                    viewBox="0 0 24 24"
+                  >
+                    <path
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                      strokeWidth={2}
+                      d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z"
+                    />
+                  </svg>
+                </div>
+                <h3 className="text-lg font-semibold">
+                  Behavioral and Social Sciences
+                </h3>
+              </div>
+              <p className="text-gray-600 text-sm">
+                Study of human and animal behavior, psychology, sociology, and
+                social relationships.
+              </p>
+            </div>
+
+            <div className="bg-white p-6 rounded-lg shadow-md border-l-4 border-teal-500">
+              <div className="flex items-center mb-4">
+                <div className="w-12 h-12 bg-teal-100 rounded-lg flex items-center justify-center mr-3">
+                  <svg
+                    className="w-6 h-6 text-teal-600"
+                    fill="none"
+                    stroke="currentColor"
+                    viewBox="0 0 24 24"
+                  >
+                    <path
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                      strokeWidth={2}
+                      d="M19.428 15.428a2 2 0 00-1.022-.547l-2.387-.477a6 6 0 00-3.86.517l-.318.158a6 6 0 01-3.86.517L6.05 15.21a2 2 0 00-1.806.547M8 4h8l-1 1v5.172a2 2 0 00.586 1.414l5 5c1.26 1.26.367 3.414-1.415 3.414H4.828c-1.782 0-2.674-2.154-1.414-3.414l5-5A2 2 0 009 7.172V5L8 4z"
+                    />
+                  </svg>
+                </div>
+                <h3 className="text-lg font-semibold">Biochemistry</h3>
+              </div>
+              <p className="text-gray-600 text-sm">
+                Chemistry of life processes including molecular biology,
+                enzymes, and metabolism.
+              </p>
+            </div>
+
+            <div className="bg-white p-6 rounded-lg shadow-md border-l-4 border-green-500">
+              <div className="flex items-center mb-4">
+                <div className="w-12 h-12 bg-green-100 rounded-lg flex items-center justify-center mr-3">
+                  <svg
+                    className="w-6 h-6 text-green-600"
+                    fill="none"
+                    stroke="currentColor"
+                    viewBox="0 0 24 24"
+                  >
+                    <circle cx="12" cy="12" r="3" fill="currentColor" />
+                    <ellipse cx="12" cy="6" rx="3" ry="5" strokeWidth={1.5} />
+                    <ellipse
+                      cx="18"
+                      cy="12"
+                      rx="3"
+                      ry="5"
+                      strokeWidth={1.5}
+                      transform="rotate(90 18 12)"
+                    />
+                    <ellipse cx="12" cy="18" rx="3" ry="5" strokeWidth={1.5} />
+                    <ellipse
+                      cx="6"
+                      cy="12"
+                      rx="3"
+                      ry="5"
+                      strokeWidth={1.5}
+                      transform="rotate(90 6 12)"
+                    />
+                    <ellipse
+                      cx="15"
+                      cy="9"
+                      rx="2.5"
+                      ry="7"
+                      strokeWidth={1.5}
+                      transform="rotate(45 15 9)"
+                    />
+                    <ellipse
+                      cx="15"
+                      cy="15"
+                      rx="2.5"
+                      ry="7"
+                      strokeWidth={1.5}
+                      transform="rotate(135 15 15)"
+                    />
+                    <ellipse
+                      cx="9"
+                      cy="15"
+                      rx="2.5"
+                      ry="7"
+                      strokeWidth={1.5}
+                      transform="rotate(225 9 15)"
+                    />
+                    <ellipse
+                      cx="9"
+                      cy="9"
+                      rx="2.5"
+                      ry="7"
+                      strokeWidth={1.5}
+                      transform="rotate(315 9 9)"
+                    />
+                  </svg>
+                </div>
+                <h3 className="text-lg font-semibold">Botany</h3>
+              </div>
+              <p className="text-gray-600 text-sm">
+                Study of plant life including agriculture, plant genetics, and
+                plant physiology.
+              </p>
+            </div>
+
             <div className="bg-white p-6 rounded-lg shadow-md border-l-4 border-blue-500">
               <div className="flex items-center mb-4">
                 <div className="w-12 h-12 bg-blue-100 rounded-lg flex items-center justify-center mr-3">
@@ -256,130 +378,8 @@ export default function About() {
                 <h3 className="text-lg font-semibold">Chemistry</h3>
               </div>
               <p className="text-gray-600 text-sm">
-                Molecular interactions, chemical reactions, and material science
-                projects
-              </p>
-            </div>
-
-            <div className="bg-white p-6 rounded-lg shadow-md border-l-4 border-green-500">
-              <div className="flex items-center mb-4">
-                <div className="w-12 h-12 bg-green-100 rounded-lg flex items-center justify-center mr-3">
-                  <svg
-                    className="w-6 h-6 text-green-600"
-                    fill="none"
-                    stroke="currentColor"
-                    viewBox="0 0 24 24"
-                  >
-                    <path
-                      strokeLinecap="round"
-                      strokeLinejoin="round"
-                      strokeWidth={2}
-                      d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z"
-                    />
-                  </svg>
-                </div>
-                <h3 className="text-lg font-semibold">Biology</h3>
-              </div>
-              <p className="text-gray-600 text-sm">
-                Life sciences, genetics, ecology, and medical research projects
-              </p>
-            </div>
-
-            <div className="bg-white p-6 rounded-lg shadow-md border-l-4 border-purple-500">
-              <div className="flex items-center mb-4">
-                <div className="w-12 h-12 bg-purple-100 rounded-lg flex items-center justify-center mr-3">
-                  <svg
-                    className="w-6 h-6 text-purple-600"
-                    fill="none"
-                    stroke="currentColor"
-                    viewBox="0 0 24 24"
-                  >
-                    <path
-                      strokeLinecap="round"
-                      strokeLinejoin="round"
-                      strokeWidth={2}
-                      d="M9.75 17L9 20l-1 1h8l-1-1-.75-3M3 13h18M5 17h14a2 2 0 002-2V5a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"
-                    />
-                  </svg>
-                </div>
-                <h3 className="text-lg font-semibold">Physics</h3>
-              </div>
-              <p className="text-gray-600 text-sm">
-                Mechanics, energy, waves, and theoretical physics investigations
-              </p>
-            </div>
-
-            <div className="bg-white p-6 rounded-lg shadow-md border-l-4 border-orange-500">
-              <div className="flex items-center mb-4">
-                <div className="w-12 h-12 bg-orange-100 rounded-lg flex items-center justify-center mr-3">
-                  <svg
-                    className="w-6 h-6 text-orange-600"
-                    fill="none"
-                    stroke="currentColor"
-                    viewBox="0 0 24 24"
-                  >
-                    <path
-                      strokeLinecap="round"
-                      strokeLinejoin="round"
-                      strokeWidth={2}
-                      d="M9 3v2m6-2v2M9 19v2m6-2v2M5 9H3m2 6H3m18-6h-2m2 6h-2M7 19h10a2 2 0 002-2V7a2 2 0 00-2-2H7a2 2 0 00-2 2v10a2 2 0 002 2zM9 9h6v6H9V9z"
-                    />
-                  </svg>
-                </div>
-                <h3 className="text-lg font-semibold">Engineering</h3>
-              </div>
-              <p className="text-gray-600 text-sm">
-                Design challenges, robotics, and innovative engineering
-                solutions
-              </p>
-            </div>
-
-            <div className="bg-white p-6 rounded-lg shadow-md border-l-4 border-teal-500">
-              <div className="flex items-center mb-4">
-                <div className="w-12 h-12 bg-teal-100 rounded-lg flex items-center justify-center mr-3">
-                  <svg
-                    className="w-6 h-6 text-teal-600"
-                    fill="none"
-                    stroke="currentColor"
-                    viewBox="0 0 24 24"
-                  >
-                    <path
-                      strokeLinecap="round"
-                      strokeLinejoin="round"
-                      strokeWidth={2}
-                      d="M3.055 11H5a2 2 0 012 2v1a2 2 0 002 2 2 2 0 012 2v2.945M8 3.935V5.5A2.5 2.5 0 0010.5 8h.5a2 2 0 012 2 2 2 0 104 0 2 2 0 012-2h1.064M15 20.488V18a2 2 0 012-2h3.064M21 12a9 9 0 11-18 0 9 9 0 0118 0z"
-                    />
-                  </svg>
-                </div>
-                <h3 className="text-lg font-semibold">Earth Science</h3>
-              </div>
-              <p className="text-gray-600 text-sm">
-                Climate studies, geology, astronomy, and environmental research
-              </p>
-            </div>
-
-            <div className="bg-white p-6 rounded-lg shadow-md border-l-4 border-red-500">
-              <div className="flex items-center mb-4">
-                <div className="w-12 h-12 bg-red-100 rounded-lg flex items-center justify-center mr-3">
-                  <svg
-                    className="w-6 h-6 text-red-600"
-                    fill="none"
-                    stroke="currentColor"
-                    viewBox="0 0 24 24"
-                  >
-                    <path
-                      strokeLinecap="round"
-                      strokeLinejoin="round"
-                      strokeWidth={2}
-                      d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z"
-                    />
-                  </svg>
-                </div>
-                <h3 className="text-lg font-semibold">Mathematics</h3>
-              </div>
-              <p className="text-gray-600 text-sm">
-                Statistical analysis, mathematical modeling, and computational
-                projects
+                Study of matter composition and chemical reactions including
+                organic and inorganic chemistry.
               </p>
             </div>
 
@@ -403,7 +403,33 @@ export default function About() {
                 <h3 className="text-lg font-semibold">Computer Science</h3>
               </div>
               <p className="text-gray-600 text-sm">
-                Programming, algorithms, AI, and technology innovation projects
+                Development of software and hardware including AI, algorithms,
+                and programming.
+              </p>
+            </div>
+
+            <div className="bg-white p-6 rounded-lg shadow-md border-l-4 border-pink-500">
+              <div className="flex items-center mb-4">
+                <div className="w-12 h-12 bg-pink-100 rounded-lg flex items-center justify-center mr-3">
+                  <svg
+                    className="w-6 h-6 text-pink-600"
+                    fill="none"
+                    stroke="currentColor"
+                    viewBox="0 0 24 24"
+                  >
+                    <path
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                      strokeWidth={2}
+                      d="M9 12l2 2 4-4M7.835 4.697a3.42 3.42 0 001.946-.806 3.42 3.42 0 014.438 0 3.42 3.42 0 001.946.806 3.42 3.42 0 013.138 3.138 3.42 3.42 0 00.806 1.946 3.42 3.42 0 010 4.438 3.42 3.42 0 00-.806 1.946 3.42 3.42 0 01-3.138 3.138 3.42 3.42 0 00-1.946.806 3.42 3.42 0 01-4.438 0 3.42 3.42 0 00-1.946-.806 3.42 3.42 0 01-3.138-3.138 3.42 3.42 0 00-.806-1.946 3.42 3.42 0 010-4.438 3.42 3.42 0 00.806-1.946 3.42 3.42 0 013.138-3.138z"
+                    />
+                  </svg>
+                </div>
+                <h3 className="text-lg font-semibold">Consumer Science</h3>
+              </div>
+              <p className="text-gray-600 text-sm">
+                Testing and comparison of consumer products.{" "}
+                <strong>(6th through 8th grade ONLY)</strong>
               </p>
             </div>
 
@@ -420,16 +446,230 @@ export default function About() {
                       strokeLinecap="round"
                       strokeLinejoin="round"
                       strokeWidth={2}
-                      d="M13 10V3L4 14h7v7l9-11h-7z"
+                      d="M3.055 11H5a2 2 0 012 2v1a2 2 0 002 2 2 2 0 012 2v2.945M8 3.935V5.5A2.5 2.5 0 0010.5 8h.5a2 2 0 012 2 2 2 0 104 0 2 2 0 012-2h1.064M15 20.488V18a2 2 0 012-2h3.064M21 12a9 9 0 11-18 0 9 9 0 0118 0z"
                     />
                   </svg>
                 </div>
-                <h3 className="text-lg font-semibold">Energy</h3>
+                <h3 className="text-lg font-semibold">
+                  Earth and Space Sciences
+                </h3>
               </div>
               <p className="text-gray-600 text-sm">
-                Renewable energy, sustainability, and environmental solutions
+                Study of Earth and the universe including geology, astronomy,
+                and meteorology.
               </p>
             </div>
+
+            <div className="bg-white p-6 rounded-lg shadow-md border-l-4 border-orange-500">
+              <div className="flex items-center mb-4">
+                <div className="w-12 h-12 bg-orange-100 rounded-lg flex items-center justify-center mr-3">
+                  <svg
+                    className="w-6 h-6 text-orange-600"
+                    fill="none"
+                    stroke="currentColor"
+                    viewBox="0 0 24 24"
+                  >
+                    <path
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                      strokeWidth={2}
+                      d="M9 3v2m6-2v2M9 19v2m6-2v2M5 9H3m2 6H3m18-6h-2m2 6h-2M7 19h10a2 2 0 002-2V7a2 2 0 00-2-2H7a2 2 0 00-2 2v10a2 2 0 002 2zM9 9h6v6H9V9z"
+                    />
+                  </svg>
+                </div>
+                <h3 className="text-lg font-semibold">Engineering</h3>
+              </div>
+              <p className="text-gray-600 text-sm">
+                Technology projects applying scientific principles to practical
+                solutions and manufacturing.
+              </p>
+            </div>
+
+            <div className="bg-white p-6 rounded-lg shadow-md border-l-4 border-emerald-500">
+              <div className="flex items-center mb-4">
+                <div className="w-12 h-12 bg-emerald-100 rounded-lg flex items-center justify-center mr-3">
+                  <svg
+                    className="w-6 h-6 text-emerald-600"
+                    fill="none"
+                    stroke="currentColor"
+                    viewBox="0 0 24 24"
+                  >
+                    <path
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                      strokeWidth={2}
+                      d="M3.055 11H5a2 2 0 012 2v1a2 2 0 002 2 2 2 0 012 2v2.945M8 3.935V5.5A2.5 2.5 0 0010.5 8h.5a2 2 0 012 2 2 2 0 104 0 2 2 0 012-2h1.064M15 20.488V18a2 2 0 012-2h3.064M21 12a9 9 0 11-18 0 9 9 0 0118 0z"
+                    />
+                  </svg>
+                </div>
+                <h3 className="text-lg font-semibold">
+                  Environmental Sciences
+                </h3>
+              </div>
+              <p className="text-gray-600 text-sm">
+                Study of environmental problems and solutions including
+                pollution, ecosystems, and sustainability.
+              </p>
+            </div>
+
+            <div className="bg-white p-6 rounded-lg shadow-md border-l-4 border-red-500">
+              <div className="flex items-center mb-4">
+                <div className="w-12 h-12 bg-red-100 rounded-lg flex items-center justify-center mr-3">
+                  <svg
+                    className="w-6 h-6 text-red-600"
+                    fill="none"
+                    stroke="currentColor"
+                    viewBox="0 0 24 24"
+                  >
+                    <path
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                      strokeWidth={2}
+                      d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z"
+                    />
+                  </svg>
+                </div>
+                <h3 className="text-lg font-semibold">Mathematics</h3>
+              </div>
+              <p className="text-gray-600 text-sm">
+                Mathematical modeling, statistics, and computational analysis.
+              </p>
+            </div>
+
+            <div className="bg-white p-6 rounded-lg shadow-md border-l-4 border-rose-500">
+              <div className="flex items-center mb-4">
+                <div className="w-12 h-12 bg-rose-100 rounded-lg flex items-center justify-center mr-3">
+                  <svg
+                    className="w-6 h-6 text-rose-600"
+                    fill="none"
+                    stroke="currentColor"
+                    viewBox="0 0 24 24"
+                  >
+                    <path
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                      strokeWidth={2}
+                      d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z"
+                    />
+                  </svg>
+                </div>
+                <h3 className="text-lg font-semibold">Medicine and Health</h3>
+              </div>
+              <p className="text-gray-600 text-sm">
+                Study of human and animal health, disease, and medical
+                treatments.
+              </p>
+            </div>
+
+            <div className="bg-white p-6 rounded-lg shadow-md border-l-4 border-cyan-500">
+              <div className="flex items-center mb-4">
+                <div className="w-12 h-12 bg-cyan-100 rounded-lg flex items-center justify-center mr-3">
+                  <svg
+                    className="w-6 h-6 text-cyan-600"
+                    fill="none"
+                    stroke="currentColor"
+                    viewBox="0 0 24 24"
+                  >
+                    <circle cx="12" cy="12" r="8" strokeWidth={2} />
+                    <circle cx="12" cy="12" r="3" fill="currentColor" />
+                  </svg>
+                </div>
+                <h3 className="text-lg font-semibold">Microbiology</h3>
+              </div>
+              <p className="text-gray-600 text-sm">
+                Study of microorganisms including bacteria, viruses, fungi, and
+                their effects.
+              </p>
+            </div>
+
+            <div className="bg-white p-6 rounded-lg shadow-md border-l-4 border-violet-500">
+              <div className="flex items-center mb-4">
+                <div className="w-12 h-12 bg-violet-100 rounded-lg flex items-center justify-center mr-3">
+                  <svg
+                    className="w-7 h-7 text-violet-600"
+                    fill="none"
+                    stroke="currentColor"
+                    viewBox="-2 -2 28 28"
+                  >
+                    <circle cx="12" cy="12" r="2" fill="currentColor" />
+                    <ellipse cx="12" cy="12" rx="12" ry="5" strokeWidth={1.5} />
+                    <ellipse
+                      cx="12"
+                      cy="12"
+                      rx="12"
+                      ry="5"
+                      strokeWidth={1.5}
+                      transform="rotate(60 12 12)"
+                    />
+                    <ellipse
+                      cx="12"
+                      cy="12"
+                      rx="12"
+                      ry="5"
+                      strokeWidth={1.5}
+                      transform="rotate(120 12 12)"
+                    />
+                  </svg>
+                </div>
+                <h3 className="text-lg font-semibold">Physics</h3>
+              </div>
+              <p className="text-gray-600 text-sm">
+                Study of energy, matter, and fundamental forces including
+                mechanics and quantum physics.
+              </p>
+            </div>
+
+            <div className="bg-white p-6 rounded-lg shadow-md border-l-4 border-amber-500">
+              <div className="flex items-center mb-4">
+                <div className="w-12 h-12 bg-amber-100 rounded-lg flex items-center justify-center mr-3">
+                  <svg
+                    className="w-6 h-6 text-amber-600"
+                    fill="none"
+                    stroke="currentColor"
+                    viewBox="0 0 24 24"
+                  >
+                    <path
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                      strokeWidth={2}
+                      d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z"
+                    />
+                  </svg>
+                </div>
+                <h3 className="text-lg font-semibold">Zoology</h3>
+              </div>
+              <p className="text-gray-600 text-sm">
+                Study of animals including genetics, behavior, and physiology.
+              </p>
+            </div>
+          </div>
+
+          <div className="text-center mt-12">
+            <p className="text-gray-600 mb-4">
+              Want more detailed information about each category and suggested
+              topics?
+            </p>
+            <a
+              href="/Fair Categories.pdf"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex items-center bg-blue-600 text-white px-6 py-3 rounded-lg font-semibold hover:bg-blue-700 transition-colors"
+            >
+              <svg
+                className="w-5 h-5 mr-2"
+                fill="none"
+                stroke="currentColor"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  strokeWidth={2}
+                  d="M12 10v6m0 0l-3-3m3 3l3-3m2 8H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"
+                />
+              </svg>
+              Download Full Category Guide (PDF)
+            </a>
           </div>
         </div>
       </section>

@@ -76,7 +76,7 @@ export default function Home() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
           <div className="bg-white rounded-lg shadow-md text-center mb-12 p-8">
             <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
-              2025 Science Fair Details
+              2026 Science Fair Details
             </h2>
             <p className="text-lg text-black max-w-2xl mx-auto">
               Join us for an exciting day of scientific discovery and innovation
@@ -156,9 +156,9 @@ export default function Home() {
               </div>
               <h3 className="text-xl font-semibold mb-2">Who</h3>
               <p className="text-gray-600">
-                Students K-12
+                Students 6-12
                 <br />
-                With A Passion For Science!
+                With a Passion for Science!
               </p>
             </div>
           </div>
@@ -175,15 +175,14 @@ export default function Home() {
               </h2>
               <p className="text-lg text-gray-600 mb-6">
                 The Delco Science Fair has been inspiring young minds for over
-                two decades. Our mission is to encourage scientific inquiry,
+                six decades. Our mission is to encourage scientific inquiry,
                 critical thinking, and innovation among students throughout
-                Delaware County.
+                Delaware County while providing a platform to showcase their
+                research.
               </p>
               <p className="text-lg text-gray-600 mb-8">
-                From elementary school experiments to advanced high school
-                research projects, we celebrate all levels of scientific
-                achievement and provide a platform for students to showcase
-                their discoveries.
+                From middle school experiments to advanced high school research
+                projects, we celebrate all levels of scientific achievement.
               </p>
               <Link
                 href="/about"
@@ -196,7 +195,7 @@ export default function Home() {
               <div className="space-y-6">
                 <div className="flex items-center">
                   <div className="w-14 h-14 bg-blue-600 rounded-full flex items-center justify-center mr-4">
-                    <span className="text-white font-bold text-xl">500+</span>
+                    <span className="text-white font-bold text-xl">200+</span>
                   </div>
                   <div>
                     <h4 className="font-semibold text-gray-900">
@@ -207,7 +206,7 @@ export default function Home() {
                 </div>
                 <div className="flex items-center">
                   <div className="w-14 h-14 bg-green-600 rounded-full flex items-center justify-center mr-4">
-                    <span className="text-white font-bold text-xl">25</span>
+                    <span className="text-white font-bold text-xl">67</span>
                   </div>
                   <div>
                     <h4 className="font-semibold text-gray-900">
@@ -218,7 +217,7 @@ export default function Home() {
                 </div>
                 <div className="flex items-center">
                   <div className="w-14 h-14 bg-purple-600 rounded-full flex items-center justify-center mr-4">
-                    <span className="text-white font-bold text-xl">50+</span>
+                    <span className="text-white font-bold text-xl">30+</span>
                   </div>
                   <div>
                     <h4 className="font-semibold text-gray-900">
@@ -308,7 +307,7 @@ export default function Home() {
             Ready to Join Us?
           </h2>
           <p className="text-xl text-blue-100 mb-8 max-w-2xl mx-auto">
-            Registration is now open for the 2025 Delco Science Fair. Don't miss
+            Registration is now open for the 2026 Delco Science Fair. Don't miss
             your chance to be part of this amazing event!
           </p>
           <Link

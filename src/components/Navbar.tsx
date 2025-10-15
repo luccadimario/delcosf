@@ -122,16 +122,16 @@ export default function Navbar() {
               Register
             </Link>
             <Link
+              href="/guidelines"
+              className="text-gray-700 hover:text-blue-600 block px-3 py-2 text-base font-medium"
+            >
+              Guidelines
+            </Link>
+            <Link
               href="/schedule"
               className="text-gray-700 hover:text-blue-600 block px-3 py-2 text-base font-medium"
             >
               Schedule
-            </Link>
-            <Link
-              href="/projects"
-              className="text-gray-700 hover:text-blue-600 block px-3 py-2 text-base font-medium"
-            >
-              Projects
             </Link>
             <Link
               href="/contact"

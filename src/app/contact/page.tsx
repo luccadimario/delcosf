@@ -1,5 +1,5 @@
 "use client";
-import { useState } from "react";
+import { useEffect, useRef, useState } from "react";
 
 export default function Contact() {
   const [formData, setFormData] = useState({
@@ -25,6 +25,38 @@ export default function Contact() {
   const [submitStatus, setSubmitStatus] = useState<
     "idle" | "success" | "error"
   >("idle");
+  const [dropdownOpen, setDropdownOpen] = useState(false);
+
+  const inquiryOptions = [
+    { value: "general", label: "General Information" },
+    { value: "registration", label: "Registration Questions" },
+    { value: "judging", label: "Judging/Volunteering" },
+    { value: "sponsorship", label: "Sponsorship Opportunities" },
+    { value: "media", label: "Media Inquiries" },
+    { value: "technical", label: "Technical Support" },
+  ];
+
+  const selectedOption = inquiryOptions.find(
+    (option) => option.value === formData.inquiryType,
+  );
+
+  const dropdownRef = useRef<HTMLDivElement>(null);
+
+  useEffect(() => {
+    const handleClickOutside = (event: MouseEvent) => {
+      if (
+        dropdownRef.current &&
+        !dropdownRef.current.contains(event.target as Node)
+      ) {
+        setDropdownOpen(false);
+      }
+    };
+
+    document.addEventListener("mousedown", handleClickOutside);
+    return () => {
+      document.removeEventListener("mousedown", handleClickOutside);
+    };
+  }, []);
 
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
@@ -216,29 +248,71 @@ export default function Contact() {
                   </div>
                 </div>
 
-                <div>
+                <div className="relative">
                   <label
                     htmlFor="inquiryType"
                     className="block text-sm font-medium text-gray-700 mb-2"
                   >
                     Inquiry Type
                   </label>
-                  <select
-                    id="inquiryType"
-                    name="inquiryType"
-                    value={formData.inquiryType}
-                    onChange={handleChange}
-                    className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent"
-                  >
-                    <option value="general">General Information</option>
-                    <option value="registration">Registration Questions</option>
-                    <option value="judging">Judging/Volunteering</option>
-                    <option value="sponsorship">
-                      Sponsorship Opportunities
-                    </option>
-                    <option value="media">Media Inquiries</option>
-                    <option value="technical">Technical Support</option>
-                  </select>
+                  <div className="relative" ref={dropdownRef}>
+                    <button
+                      type="button"
+                      onClick={() => setDropdownOpen(!dropdownOpen)}
+                      className="w-full px-4 py-3 text-left border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent flex items-center justify-between hover:border-gray-400 transition-colors"
+                    >
+                      <span className="text-gray-900">
+                        {selectedOption?.label || "Select an option"}
+                      </span>
+                      <svg
+                        className={`w-5 h-5 text-gray-400 transition-transform duration-200 ${
+                          dropdownOpen ? "rotate-180" : ""
+                        }`}
+                        fill="none"
+                        stroke="currentColor"
+                        viewBox="0 0 24 24"
+                      >
+                        <path
+                          strokeLinecap="round"
+                          strokeLinejoin="round"
+                          strokeWidth={2}
+                          d="M19 9l-7 7-7-7"
+                        />
+                      </svg>
+                    </button>
+
+                    {dropdownOpen && (
+                      <div className="absolute z-10 w-full mt-2 bg-white border border-gray-300 rounded-lg shadow-lg">
+                        {inquiryOptions.map((option) => (
+                          <button
+                            key={option.value}
+                            type="button"
+                            onClick={() => {
+                              setFormData({
+                                ...formData,
+                                inquiryType: option.value,
+                              });
+                              setDropdownOpen(false);
+                            }}
+                            className={`w-full px-4 py-3 text-left hover:bg-blue-50 focus:bg-blue-50 focus:outline-none transition-colors ${
+                              formData.inquiryType === option.value
+                                ? "bg-blue-50 text-blue-900 font-medium"
+                                : "text-gray-900"
+                            } ${
+                              option === inquiryOptions[0]
+                                ? "rounded-t-lg"
+                                : option ===
+                                    inquiryOptions[inquiryOptions.length - 1]
+                                  ? "rounded-b-lg"
+                                  : ""
+                            }`}
+                          >
+                            {option.label}
+                          </button>
+                        ))}
+                      </div>
+                    )}
+                  </div>
                 </div>
 
                 <div>
@@ -376,10 +450,10 @@ export default function Contact() {
                   Suzanne Mecouch
                 </h3>
                 <a
-                  href="mailto:suemecouch@gmail.com"
+                  href="mailto:suemecouch@delcosciencefair.org"
                   className="text-blue-500 hover:text-blue-300 underline"
                 >
-                  suemecouch@gmail.com
+                  suemecouch@delcosciencefair.org
                 </a>
               </div>
             </div>
