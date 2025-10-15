@@ -389,7 +389,7 @@ export default function Contact() {
                     What grade levels can participate?
                   </h3>
                   <p className="text-gray-600">
-                    Students from kindergarten through 12th grade are welcome to
+                    Students from 6th through 12th grade are welcome to
                     participate. We have different categories and judging
                     criteria appropriate for each grade level.
                   </p>
@@ -411,9 +411,9 @@ export default function Contact() {
                     Can parents attend the event?
                   </h3>
                   <p className="text-gray-600">
-                    Absolutely! We encourage family members to attend and
-                    support the participants. The event is open to the public
-                    from 1:00 PM to 4:00 PM on March 6, 2026.
+                    Due to safety regulations, parents cannot be present during
+                    the fair; however, we encourage parents to come help their
+                    child set up and look around then!
                   </p>
                 </div>
 
@@ -440,15 +440,39 @@ export default function Contact() {
             <div className="text-center mb-8">
               <h2 className="text-3xl font-bold mb-4">Fair Coordinators</h2>
               <p className="text-blue-100">
-                For additional information, please contact our main fair
-                coordinator:
+                For additional information, please contact our staff:
               </p>
             </div>
-            <div className="grid md:grid-cols-1 gap-6 max-w-xl mx-auto">
+            <div className="grid md:grid-cols-3 gap-6 mx-auto">
               <div className="bg-white bg-opacity-10 rounded-lg p-6 text-center">
-                <h3 className="text-xl font-semibold mb-2 text-gray-900">
+                <h3 className="text-xl font-semibold text-gray-900">
+                  Roger Mecouch
+                </h3>
+                <h4 className="text-sm mb-2 text-gray-500">Co-Director</h4>
+                <a
+                  href="mailto:suemecouch@delcosciencefair.org"
+                  className="text-blue-500 hover:text-blue-300 underline"
+                >
+                  rmecouch@delcosciencefair.org
+                </a>
+              </div>
+              <div className="bg-white bg-opacity-10 rounded-lg p-6 text-center">
+                <h3 className="text-xl font-semibold text-gray-900">
+                  Bob Fleck
+                </h3>
+                <h4 className="text-sm mb-2 text-gray-500">Co-Director</h4>
+                <a
+                  href="mailto:suemecouch@delcosciencefair.org"
+                  className="text-blue-500 hover:text-blue-300 underline"
+                >
+                  r.f.2012@comcast.net
+                </a>
+              </div>
+              <div className="bg-white bg-opacity-10 rounded-lg p-6 text-center">
+                <h3 className="text-xl font-semibold text-gray-900">
                   Suzanne Mecouch
                 </h3>
+                <h4 className="text-sm mb-2 text-gray-500">Fair Coordinator</h4>
                 <a
                   href="mailto:suemecouch@delcosciencefair.org"
                   className="text-blue-500 hover:text-blue-300 underline"
