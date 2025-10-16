@@ -173,7 +173,7 @@ export default function About() {
             <div className="grid md:grid-cols-3 gap-8">
               <div className="bg-white p-8 rounded-lg shadow-md">
                 <div className="text-center">
-                  <div className="w-16 h-16 bg-blue-100 rounded-full flex items-center justify-center mx-auto mb-4">
+                  <div className="w-17 h-17 bg-blue-100 rounded-full flex items-center justify-center mx-auto mb-4">
                     <span className="text-2xl font-bold text-blue-600">
                       1959
                     </span>
@@ -189,7 +189,7 @@ export default function About() {
 
               <div className="bg-white p-8 rounded-lg shadow-md">
                 <div className="text-center">
-                  <div className="w-16 h-16 bg-green-100 rounded-full flex items-center justify-center mx-auto mb-4">
+                  <div className="w-17 h-17 bg-green-100 rounded-full flex items-center justify-center mx-auto mb-4">
                     <span className="text-2xl font-bold text-green-600">
                       2000
                     </span>
@@ -205,7 +205,7 @@ export default function About() {
 
               <div className="bg-white p-8 rounded-lg shadow-md">
                 <div className="text-center">
-                  <div className="w-16 h-16 bg-purple-100 rounded-full flex items-center justify-center mx-auto mb-4">
+                  <div className="w-17 h-17 bg-purple-100 rounded-full flex items-center justify-center mx-auto mb-4">
                     <span className="text-2xl font-bold text-purple-600">
                       2026
                     </span>

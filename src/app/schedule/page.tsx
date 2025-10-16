@@ -126,7 +126,7 @@ export default function Schedule() {
             </p>
           </div>
 
-          <div className="space-y-6">
+          <div className="space-y-6 mb-10">
             {importantDates.map((item, index) => {
               const isRulesWizard = item.title.includes("SRC/IRB");
               const isStemWizard =
@@ -198,6 +198,34 @@ export default function Schedule() {
                 </div>
               );
             })}
+          </div>
+        </div>
+        <div className="bg-blue-50 border border-blue-200 rounded-lg p-4 max-w-2xl mx-auto">
+          <div className="flex items-center justify-center">
+            <svg
+              className="w-6 h-6 text-blue-600 mr-2"
+              fill="none"
+              stroke="currentColor"
+              viewBox="0 0 24 24"
+            >
+              <path
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                strokeWidth={2}
+                d="M12 10v6m0 0l-3-3m3 3l3-3m2 8H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"
+              />
+            </svg>
+            <span className="text-blue-800 font-medium mr-3">
+              Complete Requirements Document:
+            </span>
+            <a
+              href="/General Info & Due Dates.pdf"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="bg-blue-600 text-white px-4 py-2 rounded hover:bg-blue-700 transition-colors text-sm font-medium"
+            >
+              Download PDF
+            </a>
           </div>
         </div>
       </section>
